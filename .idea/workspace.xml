@@ -24,7 +24,7 @@
     <session id="596529908">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="31" />
+          <entry key="project.closed" value="32" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="4" />
@@ -401,11 +401,6 @@
             </path>
             <path>
               <item name="treasure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="treasure" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="treasure" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -603,7 +598,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569136152927" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569136160234" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="com.wbg.treasure.dao.WebsiteInformationMapper" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
@@ -769,7 +764,7 @@
       <workItem from="1568004914107" duration="1426000" />
       <workItem from="1568083156276" duration="5210000" />
       <workItem from="1569053520933" duration="10891000" />
-      <workItem from="1569129423390" duration="6251000" />
+      <workItem from="1569129423390" duration="6803000" />
     </task>
     <servers />
   </component>
@@ -788,7 +783,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87621000" />
+    <option name="totallyTimeSpent" value="88173000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
