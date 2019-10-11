@@ -40,6 +40,8 @@ public class TrustSSL {
             conn.setHostnameVerifier(new TrustAnyHostnameVerifier());
             //设置超时间为5秒
             conn.setConnectTimeout(5 * 1000);
+            //读取数据超时
+            conn.setReadTimeout(1000 * 60 * 5);
             //防止屏蔽程序抓取而返回403错误
             conn.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
             conn.connect();

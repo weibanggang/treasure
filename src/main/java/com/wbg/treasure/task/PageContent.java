@@ -35,7 +35,7 @@ public class PageContent implements Job {
     }
 
     @Override
-    public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
+    public void execute(JobExecutionContext jobExecutionContext)  {
         if(RunStatus){
             System.out.println("程序正在跑");
             return;
@@ -47,19 +47,22 @@ public class PageContent implements Job {
         ScheduleLog scheduleLog = new ScheduleLog();
         try {
             Number = getContentService.getContent(awardInformationService.getjs());
+
+
+
+        }catch (Exception c){
+            status = false;
+            c.printStackTrace();
+        }finally {
             scheduleLog.setClassName(this.getClass().getName());
             scheduleLog.setStartTime(startTime);
             scheduleLog.setEndTime(Util.toJson(new Date()));
-            scheduleLog.setStatusLog(Boolean.toString(status));
             scheduleLog.setDatasource(Integer.toString(Number));
+            scheduleLog.setStatusLog(Boolean.toString(status));
             int a = scheduleLogService.insert(scheduleLog);
             if(a > 1){
                 System.out.println("成功添加日志");
             }
-        }catch (Exception c){
-            c.printStackTrace();
-            status =false;
-        }finally {
             RunStatus = false;
         }
 
