@@ -8,7 +8,7 @@ public class GetContent {
      *
      * @mbg.generated
      */
-    private Integer uuid;
+    private String uuid;
 
     /**
      *
@@ -99,7 +99,7 @@ public class GetContent {
      *
      * @mbg.generated
      */
-    public Integer getUuid() {
+    public String getUuid() {
         return uuid;
     }
 
@@ -111,7 +111,7 @@ public class GetContent {
      *
      * @mbg.generated
      */
-    public void setUuid(Integer uuid) {
+    public void setUuid(String uuid) {
         this.uuid = uuid;
     }
 

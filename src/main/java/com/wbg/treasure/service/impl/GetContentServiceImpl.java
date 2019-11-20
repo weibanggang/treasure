@@ -47,7 +47,7 @@ public class GetContentServiceImpl implements GetContentService {
      * @return
      */
     @Override
-    public GetContent selectByPrimaryKey(int id) {
+    public GetContent selectByPrimaryKey(String id) {
         return getContentMapper.selectByPrimaryKey(id);
     }
 

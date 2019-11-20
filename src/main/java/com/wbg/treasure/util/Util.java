@@ -88,19 +88,23 @@ public class Util {
     /**
      * 导出文件
      *
-     * @param sb
-     * @param filename
+     * @param context 内容
+     * @param filename 路径
      */
-    public static void outFile(String sb, String filename) {
+    public static void outFile(String context, String filename) {
         try {
             File file = new File(filename);
-            if (file.exists()) {
-                file.delete();
+            //获取文件
+            File parent = file.getParentFile();
+            //如果是目录
+            if (parent != null) {
+                //创建目录
+                parent.mkdirs();
             }
             file.createNewFile();
             FileOutputStream fos = new FileOutputStream(file);
             OutputStreamWriter osw = new OutputStreamWriter(fos, "utf-8");
-            osw.write(sb);
+            osw.write(context);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (FileNotFoundException e) {

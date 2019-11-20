@@ -28,7 +28,7 @@ public interface GetContentService {
      * @param id
      * @return
      */
-    GetContent selectByPrimaryKey(int id);
+    GetContent selectByPrimaryKey(String id);
 
     /**
      * 全部查询操作

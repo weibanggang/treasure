@@ -53,7 +53,7 @@ public class GetContentController {
      * @return
      */
     @GetMapping("/selectByPrimaryKey")
-    public Result selectByPrimaryKey(int id) {
+    public Result selectByPrimaryKey(String id) {
         try {
             GetContent getContent1 = getContentService.selectByPrimaryKey(id);
             if (getContent1 == null) {
